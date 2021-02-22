@@ -9,7 +9,13 @@ df2 = pd.DataFrame({
     'Pubblico': [47594, 46479, 36383, 37306, 35220],
 })
 
-# Il set e` usato per togliere le ripetizioni
-vincitori = set(pd.merge(df1, df2, on='Vincitore')['Vincitore'])
 
-print(vincitori)
+def exec():
+    # Il set e` usato per togliere le ripetizioni
+    vincitori = set(pd.merge(df1, df2, on='Vincitore')['Vincitore'])
+
+    print(vincitori)
+
+
+if __name__ == '__main__':
+    exec()

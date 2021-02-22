@@ -8,4 +8,10 @@ df = pd.DataFrame({
     'Pubblico': [47371, 53592, 49670, 52401, 42268],
 })
 
-print(df)
+
+def exec():
+    print(df)
+
+
+if __name__ == '__main__':
+    exec()
